@@ -187,7 +187,8 @@ section h3 {
   margin-top: auto;
   padding-top: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Activity Tag */
@@ -663,4 +664,55 @@ footer {
 
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Social sharing buttons */
+.share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-light);
+  width: 100%;
+}
+
+.share-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.share-button {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.share-twitter {
+  color: #000;
+}
+
+.share-facebook {
+  color: #1877f2;
+}
+
+.share-whatsapp {
+  color: #25d366;
+}
+
+.share-copy {
+  color: var(--text-secondary);
+}
+
+.share-button:hover {
+  background-color: var(--border);
+  transform: translateY(-1px);
 }
